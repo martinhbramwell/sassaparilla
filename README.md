@@ -15,5 +15,7 @@ I have rearranged it so that it fits with the "automatic" features of Meteor, eg
 
  4. Open the URL  http://localhost:3000/demo.html
 
+ **NOTE** : If you get a missing file error the first time I run meteor, cancel it with <ctrl-c> and try again.
  
+ (Can anyone tell me how to fix that?)
  
