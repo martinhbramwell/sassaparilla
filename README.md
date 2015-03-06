@@ -1,6 +1,8 @@
 # sassaparilla
 This is a Meteor version of the responsive web site starter kit : [Sassaparilla ](https://github.com/fffunction/sassaparilla/blob/master/README.md#sassaparilla)
 
+The main advantage of Sassaparilla is that you get a professionally developed responsive web site as your starting point.  Since it uses SASS and Compass from the get go, you start from a readily adaptable platform that uses best practice patterns.
+
 I have rearranged it so that it fits with the "automatic" features of Meteor, eg. images in _public_ directory.
 
 ### Installation
