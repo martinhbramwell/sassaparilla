@@ -7,7 +7,7 @@ I have rearranged it so that it fits with the "automatic" features of Meteor, eg
 
 ### Installation
 
- 1. git clone (git@github.com:martinhbramwell/sassaparilla.git)[git@github.com:martinhbramwell/sassaparilla.git]
+ 1. git clone [git@github.com:martinhbramwell/sassaparilla.git](git@github.com:martinhbramwell/sassaparilla.git)
  2. cd sassaparilla
  3. EITHER : meteor
 
