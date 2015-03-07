@@ -137,6 +137,16 @@ strong, b {
 			@include adjust-font-size-to($alpha);
 		}
 	}
+	a {
+		color: #ffffff;
+	}
+	p {
+		text-align: center;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: $action-respond;
+		font-size: 70%
+	}
 }
 
 .how-to {
