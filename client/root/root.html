@@ -1,0 +1,19 @@
+<template name="tmpltRoot">
+  <div class="left">
+    {{> yield region="header"}}
+  </div>
+
+
+  <div class="main">
+    {{> yield}}
+  </div>
+  <div class="bottom">
+    {{> yield region="footer"}}
+  </div>
+</template>
+
+<template name="hello">
+  <p><a href="/">&lt;&lt; Back</a></p>
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
