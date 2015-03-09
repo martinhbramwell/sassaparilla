@@ -11,8 +11,8 @@ renderHomePage = function(scope){
   if ( false ) {
     scope.render("homePage");
   } else {
-    scope.render("landingPage");
-//    scope.render("tmpLandingPage");
+//    scope.render("landingPage");
+    scope.render("tmpLandingPage");
   }
 };
 
