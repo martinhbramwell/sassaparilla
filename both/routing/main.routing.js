@@ -12,6 +12,7 @@ renderHomePage = function(scope){
     scope.render("homePage");
   } else {
     scope.render("landingPage");
+//    scope.render("tmpLandingPage");
   }
 };
 
