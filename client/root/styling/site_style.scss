@@ -1,0 +1,5 @@
+.hero-B {
+  @extend .hero;
+  background-image: url(perseid.jpg);
+  z-index: -98;
+}

@@ -13,12 +13,6 @@
   padding: 10em;
 }
 
-.hero-B {
-  @extend .hero;
-  background-image: url(perseid.jpg);
-  z-index: -98;
-}
-
 .button-layer {
   position: absolute;
   left: 2em;
