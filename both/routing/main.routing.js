@@ -1,7 +1,7 @@
 /*  This file is the main switchboard for the project */
 
 //  Turn demo mode on or off with 1 or 0 here ...
-var DEMO = 0;
+var DEMO = 1;
 
 // Over all site structure
 Router.configure({
