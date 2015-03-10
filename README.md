@@ -11,7 +11,7 @@ I have rearranged it so that it fits with the "automatic" features of Meteor, eg
  2. cd sassaparilla
  3. EITHER : meteor
 
-    OR : edit the MONGO_URL in _qrun.sh_ to point to your neighbourhood Mongo database you wanto use and then run _./qrun.sh_  (if you don't want to lose 100s of MBs for an empty Mongo database)
+    OR : edit the MONGO_URL in _qrun.sh_ to point to the Mongo database you want to use and then run _./qrun.sh_  (this is so you don't lose 100s of MBs of disk space for an empty Mongo database)
 
  4. Open the URL  http://localhost:3000/demo.html
 
