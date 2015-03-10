@@ -9,7 +9,7 @@ Meteor.methods({
 
 Meteor.startup(function() {
 
-  console.log("Meteor settings file contains : ");
+  console.log("Note to console log from server/app.environment ::  Meteor settings file contains : ");
   console.log(Meteor.settings );
 
 });
