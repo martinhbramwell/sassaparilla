@@ -15,7 +15,7 @@ I have rearranged it so that it fits with the "automatic" features of Meteor, eg
 
  4. Open the URL  http://localhost:3000/demo.html
 
- **URGENT NOTE** : You **will** get a missing file error the first time you run it with Meteor.  Just cancel it with <ctrl-c> and try again.
+ **URGENT NOTE** : You **will** get a missing file error the first time you run it with Meteor.  Just cancel with <ctrl-c> and try again.
  
  (Can anyone tell me how to fix that?)
  
@@ -34,10 +34,10 @@ You can find them at :
 
 1. `client/root/body/landing.html`
 1. `client/root/demo/extended_demo.html`
-1. `client/root/sassaparilla/demo/demo.html`
+1. `client/sassaparilla/demo/demo.html`
 
 With demo mode turned off, you can safely delete the two demo directories:
 
     rm -fr client/root/demo
-    rm -fr client/root/sassaparilla/demo 
+    rm -fr client/sassaparilla/demo 
 
