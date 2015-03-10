@@ -7,7 +7,7 @@ Router.configure({
   }
 });
 
-var DEMO = 1;
+var DEMO = 0;
 renderHomePage = function(scope){
 
   if ( false ) { //        FIXME : NEEDS TO TEST IF USER HAS LOGGED IN.
