@@ -7,13 +7,21 @@ Router.configure({
   }
 });
 
+var DEMO = 1;
 renderHomePage = function(scope){
-  if ( false ) {
+
+  if ( false ) { //        FIXME : NEEDS TO TEST IF USER HAS LOGGED IN.
     scope.render("homePage");
-  } else {
-//    scope.render("landingPage");
+  } else if ( DEMO ) {
     scope.render("tmpLandingPage");
+    return;
+  } else {
+    scope.render("landingPage");
   }
+
+  scope.render("tmpltHeader", {to: 'header'});
+  scope.render("tmpltFooter", {to: 'footer'});
+
 };
 
 Router.route('/', function () {

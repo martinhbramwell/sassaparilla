@@ -1,8 +1,8 @@
 renderExtendedDemoVersion = function(scope, original){
   console.log(scope);
 	scope.render(scope.route.getName());
-	scope.render("tmpltHeader", {to: 'header'});
-	scope.render("tmpltFooter", {to: 'footer'});
+	scope.render("extended_demo_header", {to: 'header'});
+	scope.render("extended_demo_footer", {to: 'footer'});
 };
 
 Router.route('extendedDemo', {
