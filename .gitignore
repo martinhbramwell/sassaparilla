@@ -1,6 +1,7 @@
 .meteor/local
 .meteor/meteorite
 *.*~
+*~
 .meteor/shipping
 config.*
 
