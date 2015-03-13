@@ -60,7 +60,7 @@ echo "Installing . . . "
 ssh ${TARGET_SERVER} "sudo -u meteor /home/meteor/installProj.sh ${PROJ}"
 #
 echo "Restarting . . . "
-#     ssh ${TARGET_SERVER} "sudo -u root /home/meteor/restartMeteor.sh"
+ssh ${TARGET_SERVER} "sudo -u root /home/meteor/restartMeteor.sh"
 #
 popd > /dev/null
 
