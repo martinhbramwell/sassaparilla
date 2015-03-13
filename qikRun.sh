@@ -5,13 +5,13 @@ if [ ! -f "config.sh" ]; then
   echo "cp example.config.sh config.sh "
   exit
 fi
-source config.sh
+source settings.sh
 echo "### Configuration is :"
 echo "   ~  Connect to  Mongo server : " $MONGO_URL
 echo "   ~  Running in demo mode : " $DEMO_MODE
 echo "### ~   ~   ~    "
 
-meteor --settings=config.json
+meteor --settings=settings.json
 
 
 

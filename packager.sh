@@ -31,9 +31,11 @@ echo "**NOT** Checking/installing iOS capabilities : "
 echo ""
 echo ""
 echo "Building project : ${PROJ} in ${BUILD_DIRECTORY}"
+cp settings.json  ./public/
 meteor build ${TARGET_DIRECTORY}         --server=${TARGET_SERVER_URL}
 mv ${TARGET_DIRECTORY}/android/unaligned.apk ${TARGET_DIRECTORY}/android/${PROJ}_unaligned.apk
 meteor build ${TARGET_DIRECTORY} --debug --server=${TARGET_SERVER_URL}
+rm -f ./public/settings.json
 #
 #
 pushd ${TARGET_DIRECTORY}

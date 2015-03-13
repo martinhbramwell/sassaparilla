@@ -3,5 +3,6 @@
 *.*~
 *~
 .meteor/shipping
-config.*
+config.sh
+settings.json
 
