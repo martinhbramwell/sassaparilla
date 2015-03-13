@@ -5,7 +5,7 @@ if [ ! -f "config.sh" ]; then
   echo "cp example.config.sh config.sh "
   exit
 fi
-source settings.sh
+source config.sh
 echo "### Configuration is :"
 echo "   ~  Connect to  Mongo server : " $MONGO_URL
 echo "   ~  Running in demo mode : " $DEMO_MODE
