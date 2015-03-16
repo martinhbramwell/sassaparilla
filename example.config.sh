@@ -10,6 +10,8 @@ export ALIGNMENT=4
 
 export BUILD_DIRECTORY=../tmp
 
+# export VELOCITY_DEBUG=1
+
 
 
 
