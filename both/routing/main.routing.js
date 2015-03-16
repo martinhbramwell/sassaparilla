@@ -1,14 +1,5 @@
 /*  This file is the main switchboard for the project */
 
-//  Turn demo mode on or off with true or false here ...
-var DEMO = true;
-if (Meteor.settings && Meteor.settings.public) {
-  DEMO = "true" === Meteor.settings.public.demo_mode; 
-} else {
-  console.log("Disable demo_mode by copying example.config.json to config.json and setting 'demo_mode' to false.");
-}
-
-
 // Over all site structure
 Router.configure({
   layoutTemplate: 'tmpltRoot',
@@ -23,7 +14,7 @@ renderHomePage = function(scope){
 
   if ( false ) { //        FIXME : NEEDS TO TEST IF USER HAS LOGGED IN.
     scope.render("homePage");
-  } else if ( DEMO ) {
+  } else if ( Meteor.settings.public.demo_mode ) {
     scope.render("tmpLandingPage");
     return;
   } else {
@@ -41,5 +32,25 @@ Router.route('/', function () {
 
 Router.route('/index.html', function () {
   renderHomePage(this);
+});
+
+Meteor.startup(function() {
+  if (  !  Meteor.settings) {
+    console.log("A.");
+    Meteor['settings'] = {};
+  };
+  if (  !  Meteor.settings.public) {
+    console.log("B.");
+    Meteor.settings['public'] = {};
+  };
+
+  if ( 'demo_mode' in Meteor.settings.public) {
+    console.log("Demo_mode is " + Meteor.settings.public.demo_mode);
+  } else {
+    console.log("C.");
+    Meteor.settings.public['demo_mode'] = true;
+    console.log("Disable demo_mode by copying example.config.json to config.json and setting 'demo_mode' to false.");
+  };
+
 });
 

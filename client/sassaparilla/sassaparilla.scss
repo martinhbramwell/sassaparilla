@@ -99,28 +99,30 @@ strong, b {
 	background-repeat: no-repeat;
 	overflow: hidden;
 	@include trailer(6);
-	@include padding-leader(8);
-	@include padding-trailer(8);
+	@include padding-leader(20);
+	@include padding-trailer(20);
+
 	@include respond-to($b-vp) {
-		@include padding-leader(18);
-		@include padding-trailer(18);
+		@include padding-leader(30);
+		@include padding-trailer(30);
 	}
 	@include respond-to($c-vp) {
-		@include padding-leader(28);
-		@include padding-trailer(28);
+		@include padding-leader(60);
+		@include padding-trailer(60);
 	}
 	@include respond-to($d-vp) {
-		@include padding-leader(38);
-		@include padding-trailer(38);
+		@include padding-leader(60);
+		@include padding-trailer(60);
 	}
 	@include respond-to($e-vp) {
-		@include padding-leader(48);
-		@include padding-trailer(48);
+		@include padding-leader(60);
+		@include padding-trailer(60);
 	}
 	@include respond-to($f-vp) {
-		@include padding-leader(68);
-		@include padding-trailer(68);
+		@include padding-leader(90);
+		@include padding-trailer(90);
 	}
+
 	h1 {
 		text-align: center;
 		font-weight: 300;

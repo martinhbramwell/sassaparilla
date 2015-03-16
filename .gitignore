@@ -5,4 +5,6 @@
 .meteor/shipping
 config.sh
 settings.json
+packages/tests-proxy
+
 

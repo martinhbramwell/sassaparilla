@@ -17,6 +17,3 @@ fourseven:scss
 francocatena:compass
 
 # Cucumber testing
-xolvio:cucumber
-xolvio:webdriver
-
