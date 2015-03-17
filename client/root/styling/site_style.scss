@@ -1,10 +1,179 @@
-@import "../../sassaparilla/css/libs/settings";
 @import "../../sassaparilla/css/libs/mixins";
+@import "../../sassaparilla/css/libs/settings";
+@import "../../sassaparilla/css/libs/required";
+/* @import "../../sassaparilla/css/libs/placeholders"; */
+
+/*
+
+$a-vp								: 300px;	// first viewport 
+$b-vp								: 420px;	// up one
+$c-vp								: 600px;	// up two
+$d-vp								: 900px;	// up three
+$e-vp								: 1100px;	// up four
+$f-vp								: 1300px;	// up five
+
+*/
+
+
+.hero-Z {
+
+  z-index: -98;
+
+	position: relative;
+	background-color: $jack-black;
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+/*	overflow: hidden; */
+	@include trailer(6);
+	@include padding-leader(10);
+	@include padding-trailer(50);
+
+  @media screen and (orientation: portrait) {
+    background-image: url(MarinaMeteor2_25x4.png);
+	  @include respond-to($a-vp) {  //  300
+	    @include padding-leader(70);
+	    @include padding-trailer(70);
+	  }
+	  @include respond-to($b-vp) {  //  420
+	    @include padding-leader(100);
+	    @include padding-trailer(105);
+	  }
+	  @include respond-to($c-vp) {  //  600
+		  @include padding-leader(125);
+		  @include padding-trailer(145);
+	  }
+	  @include respond-to($cb-vp) { //  750
+		  @include padding-leader(125);
+		  @include padding-trailer(180);
+	  }
+	  @include respond-to($d-vp) {  //  900
+		  @include padding-leader(145);
+		  @include padding-trailer(155);
+	  }
+	  @include respond-to($e-vp) {  // 1100
+		  @include padding-leader(220);
+		  @include padding-trailer(275);
+	  }
+	  @include respond-to($f-vp) {  // 1300
+		  @include padding-leader(290);
+		  @include padding-trailer(330);
+	  }
+  }
+
+  @media screen and (orientation: landscape) {
+    background-image: url(MarinaMeteor4x2_25.png);
+	  @include respond-to($a-vp) {  // 300
+	    @include padding-leader(10);
+	    @include padding-trailer(15);
+	  }
+	  @include respond-to($b-vp) {  // 420
+	    @include padding-leader(30);
+	    @include padding-trailer(30);
+	  }
+	  @include respond-to($c-vp) {  //  600
+		  @include padding-leader(35);
+		  @include padding-trailer(40);
+	  }
+	  @include respond-to($cb-vp) { //  750
+		  @include padding-leader(40);
+		  @include padding-trailer(55);
+	  }
+	  @include respond-to($d-vp) {  //  900
+		  @include padding-leader(70);
+		  @include padding-trailer(90);
+	  }
+	  @include respond-to($e-vp) {  // 1100
+		  @include padding-leader(80);
+		  @include padding-trailer(110);
+	  }
+	  @include respond-to($f-vp) {  // 1300
+		  @include padding-leader(90);
+		  @include padding-trailer(120);
+	  }
+  }
+
+
+
+
+	h1 {
+		text-align: center;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: #fff;
+		text-transform: uppercase;
+		padding-left: $internal-spacing;
+		padding-right: $internal-spacing;
+		@include padding-trailer(2);
+		@include padding-leader(1);
+		@include adjust-font-size-to($beta);
+		@include respond-to($c-vp) {
+			@include adjust-font-size-to($alpha);
+		}
+	}
+
+
+  
+}
 
 .hero-B {
-  @extend .hero;
-  background-image: url(MarinaMeteor16x9.png);
+
   z-index: -98;
+
+	position: relative;
+	background-color: $jack-black;
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+/*	overflow: hidden; */
+	@include trailer(6);
+	@include padding-leader(20);
+	@include padding-trailer(20);
+
+	@include respond-to($b-vp) {
+	  @include padding-leader(0);
+	  @include padding-trailer(0);
+    background-image: url(MarinaMeteor4x2_25.png);
+    @media screen and (orientation: portrait) {
+		  @include padding-leader(30);
+		  @include padding-trailer(30);
+      background-image: url(MarinaMeteor2_25x4.png);
+    }
+	}
+	@include respond-to($c-vp) {
+		@include padding-leader(60);
+		@include padding-trailer(60);
+	}
+	@include respond-to($d-vp) {
+		@include padding-leader(60);
+		@include padding-trailer(60);
+	}
+	@include respond-to($e-vp) {
+		@include padding-leader(60);
+		@include padding-trailer(60);
+	}
+	@include respond-to($f-vp) {
+		@include padding-leader(90);
+		@include padding-trailer(90);
+	}
+
+	h1 {
+		text-align: center;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: #fff;
+		text-transform: uppercase;
+		padding-left: $internal-spacing;
+		padding-right: $internal-spacing;
+		@include padding-trailer(2);
+		@include padding-leader(1);
+		@include adjust-font-size-to($beta);
+		@include respond-to($c-vp) {
+			@include adjust-font-size-to($alpha);
+		}
+	}
+
+
 }
 
 
