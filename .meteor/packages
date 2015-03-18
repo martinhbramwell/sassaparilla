@@ -5,7 +5,7 @@
 # but you can also edit it by hand.
 
 # Insecure stuff you should eliminate
-autopublish
+# autopublish
 insecure
 
 # Meteor core packages
@@ -17,3 +17,5 @@ fourseven:scss
 francocatena:compass
 
 # Cucumber testing
+xolvio:webdriver
+xolvio:cucumber

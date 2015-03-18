@@ -14,7 +14,7 @@ renderHomePage = function(scope){
 
   if ( false ) { //        FIXME : NEEDS TO TEST IF USER HAS LOGGED IN.
     scope.render("homePage");
-  } else if ( Meteor.settings.public.demo_mode ) {
+  } else if ( Meteor.settings.public.demo_mode) {
     scope.render("tmpLandingPage");
     return;
   } else {
